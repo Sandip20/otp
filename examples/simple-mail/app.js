@@ -16,9 +16,9 @@ var routes = require('./routes/index');
 var app = express();
 
 // TODO: email setup (has to be changed)
-var yourEmail = 'YOUR EMAIL TO SEND TOKENS';
-var yourPwd = 'YOUR PWD FOR THIS EMAIL';
-var yourSmtp = 'YOUR SMTP SUCH AS: smtp.gmail.com';
+var yourEmail = 'sandipp017@gmail.com';
+var yourPwd = 'YOUR PWD FOR THIS EMAIL ';
+var yourSmtp = 'YOUR SMTP SUCH AS: sandippawar96.gmail.com';
 var smtpServer  = email.server.connect({
    user:    yourEmail, 
    password: yourPwd, 
@@ -30,7 +30,7 @@ var smtpServer  = email.server.connect({
 var pathToMongoDb = 'mongodb://localhost/passwordless-simple-mail';
 
 // TODO: Path to be send via email
-var host = 'http://localhost:3000/';
+var host = 'https://simplemai.herokuapp.com/';
 
 // Setup of Passwordless
 passwordless.init(new MongoStore(pathToMongoDb));
