@@ -17,7 +17,7 @@ var app = express();
 
 // TODO: email setup (has to be changed)
 var yourEmail = 'sandipp017@gmail.com';
-var yourPwd = 'YOUR PWD FOR THIS EMAIL ';
+var yourPwd = 'YOUR PWD FOR THIS EMAIL';
 var yourSmtp = 'YOUR SMTP SUCH AS: sandippawar96.gmail.com';
 var smtpServer  = email.server.connect({
    user:    yourEmail, 
@@ -27,7 +27,7 @@ var smtpServer  = email.server.connect({
 });
 
 // TODO: MongoDB setup (given default can be used)
-var pathToMongoDb = 'mongodb://localhost/passwordless-simple-mail';
+var pathToMongoDb = 'mongodb://sandip:sandip123@ds013212.mlab.com:13212/passwordless-simple-mail';
 
 // TODO: Path to be send via email
 var host = 'https://simplemai.herokuapp.com/';
