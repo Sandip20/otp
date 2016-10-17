@@ -17,8 +17,8 @@ var app = express();
 
 // TODO: email setup (has to be changed)
 var yourEmail = 'sandipp017@gmail.com';
-var yourPwd = 'YOUR PWD FOR THIS EMAIL';
-var yourSmtp = 'YOUR SMTP SUCH AS: sandippawar96.gmail.com';
+var yourPwd = 'mypwd';
+var yourSmtp = 'smtp.gmail.com';
 var smtpServer  = email.server.connect({
    user:    yourEmail, 
    password: yourPwd, 
