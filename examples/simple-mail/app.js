@@ -37,6 +37,8 @@ passwordless.init(new MongoStore(pathToMongoDb));
 passwordless.addDelivery(
     function(tokenToSend, uidToSend, recipient, callback) {
         // Send out token
+       
+         console.log("Token is generated and ready for send");
         smtpServer.send({
            text:    'Hello!\nYou can now access your account here: ' 
                 + host + '?token=' + tokenToSend + '&uid=' + encodeURIComponent(uidToSend), 
@@ -47,6 +49,9 @@ passwordless.addDelivery(
             if(err) {
                 console.log(err);
             }
+           else{
+              console.log(message);
+           }
             callback(err);
         });
     });
