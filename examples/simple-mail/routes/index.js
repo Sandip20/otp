@@ -32,6 +32,7 @@ router.post('/sendtoken',
 	passwordless.requestToken(
 		// Simply accept every user
 		function(user, delivery, callback) {
+			console.log("User requesting the token for login");
 			callback(null, user);
 			// usually you would want something like:
 			// User.find({email: user}, callback(ret) {
